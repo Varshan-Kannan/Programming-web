@@ -1,0 +1,222 @@
+<html>
+
+<head>
+    <title>Sample Form</title>
+</head>
+
+<body>
+    <!-- Start of the form where users can type info -->
+    <form action="https://www.w3schools.com/"> <!-- When you press submit, it sends your info to this page -->
+
+        <label for="fname">First name:</label><br>
+        <!-- This is the text telling you to enter your first name -->
+        <!-- The <br> moves the box to the next line -->
+
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <!-- This is a box where you type your first name -->
+        <!-- It starts with "John" already written in it -->
+        <!-- The <br> moves the next item down -->
+
+        <label for="lname">Last name:</label><br>
+        <!-- This is the text telling you to enter your last name -->
+        <!-- <br> moves the box to the next line -->
+
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <!-- This is a box for your last name -->
+        <!-- It starts with "Doe" already written -->
+        <!-- Two <br> tags add extra space before the button -->
+
+        <input type="submit" value="Submit">
+        <!-- This is the button you click to send your info -->
+
+    </form> <!-- End of the form -->
+
+
+
+
+
+
+
+
+    <hr> <!-- A horizontal line to separate sections -->
+
+
+
+<h2>Text input fields</h2> <!-- Heading for this section, tells the user what this part is about -->
+
+<form> <!-- Start of the form where users can type information -->
+
+    <label for="fname">First name:</label><br>
+    <!-- This shows the text "First name:" to tell the user what to type in the box below -->
+    <!-- <br> moves the input box to the next line -->
+
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <!-- This is a box where the user can type their first name -->
+    <!-- It already has "John" written as default text -->
+    <!-- <br> moves the next label down -->
+
+    <label for="lname">Last name:</label><br>
+    <!-- This shows the text "Last name:" to tell the user what to type in the next box -->
+    <!-- <br> moves the input box to the next line -->
+
+    <input type="text" id="lname" name="lname" value="Doe">
+    <!-- This is a box where the user can type their last name -->
+    <!-- It already has "Doe" written as default text -->
+
+</form> <!-- End of the form -->
+
+<p>Note that the form itself is not visible.</p>
+<!-- Just a note: the form container doesn’t show up as a box, only the fields inside it are visible -->
+
+<p>Also note that the default width of text input fields is 20 characters.</p>
+<!-- Explains that text boxes are usually wide enough to type 20 letters by default -->
+
+
+
+
+
+
+<hr> <!-- A horizontal line to separate sections -->
+
+
+
+
+
+
+<h2>Radio Buttons</h2> <!-- Heading for this section, tells the user this part is about radio buttons -->
+
+<p>Choose your favorite Web language:</p> <!-- Instruction for the user on what to do -->
+
+<form> <!-- Start of the form to collect user input -->
+
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <!-- A small circle button that the user can select -->
+  <!-- 'type="radio"' makes it a radio button -->
+  <!-- 'id' is used to connect this input with its label -->
+  <!-- 'name="fav_language"' groups all buttons together, so only one can be selected at a time -->
+  <!-- 'value="HTML"' is what will be sent if this option is chosen -->
+
+  <label for="html">HTML</label><br> 
+  <!-- This is the text next to the radio button so the user knows what it represents -->
+  <!-- The 'for' attribute connects the label to the radio button -->
+  <!-- <br> moves the next radio button to a new line -->
+
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <!-- Radio button for CSS, part of the same group 'fav_language' -->
+
+  <label for="css">CSS</label><br> 
+  <!-- Label for CSS radio button -->
+
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <!-- Radio button for JavaScript, still in the same group -->
+
+  <label for="javascript">JavaScript</label>
+  <!-- Label for JavaScript radio button -->
+
+</form> <!-- End of the form -->
+
+
+<hr> <!-- A horizontal line to separate sections -->
+
+
+<h2>Checklist Button</h2> <!-- Heading for this section, tells the user this part is about Checklist -->
+
+<form> <!-- Start of the form where users can select options -->
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <!-- A small box that the user can check or uncheck -->
+  <!-- 'type="checkbox"' makes it a checkbox -->
+  <!-- 'id' connects this box to its label -->
+  <!-- 'name' is used when sending data from the form -->
+  <!-- 'value="Bike"' is what gets sent if this box is checked -->
+
+  <label for="vehicle1"> I have a bike</label><br>
+  <!-- The text next to the checkbox so the user knows what it represents -->
+  <!-- 'for="vehicle1"' links the label to the checkbox so you can click the text too -->
+  <!-- <br> moves the next checkbox to a new line -->
+
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <!-- Checkbox for "Car" -->
+
+  <label for="vehicle2"> I have a car</label><br>
+  <!-- Label for the car checkbox -->
+
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <!-- Checkbox for "Boat" -->
+
+  <label for="vehicle3"> I have a boat</label>
+  <!-- Label for the boat checkbox -->
+
+</form> <!-- End of the form -->
+
+
+
+
+<hr> <!-- A horizontal line to separate sections -->
+
+
+
+
+<h2>The form target attribute</h2> <!-- Heading for this section, tells the user what this part is about -->
+
+<p>When submitting this form, the result will be opened in a new browser tab:</p> 
+<!-- Instruction for the user: the submitted form will open in a new tab -->
+
+<form action="https://www.youtube.com" target="_blank"> <!-- Start of the form -->
+<!-- 'action="https://www.youtube.com"' means the form will send your input to YouTube when submitted -->
+<!-- To actually open in a new tab, you would normally add target="_blank" -->
+
+  <label for="fname">First name:</label><br>
+  <!-- This shows the text "First name:" so the user knows what to type -->
+  <!-- <br> moves the input box to the next line -->
+
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <!-- Box where the user can type their first name -->
+  <!-- Already has "John" written as default -->
+  <!-- <br> moves the next label to a new line -->
+
+  <label for="lname">Last name:</label><br>
+  <!-- This shows "Last name:" so the user knows what to type next -->
+  <!-- <br> moves the input box to a new line -->
+
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <!-- Box where the user can type their last name -->
+  <!-- Already has "Doe" written as default -->
+  <!-- Two <br> tags add some extra space before the submit button -->
+
+  <input type="submit" value="Submit">
+  <!-- Button that the user clicks to send the form data -->
+  <!-- 'value="Submit"' is the text shown on the button -->
+
+</form> <!-- End of the form -->
+
+
+
+
+
+<hr> <!-- A horizontal line to separate sections -->
+
+<h2>Cars</h2> <!-- Heading for this section -->
+
+<p>Choose a car from the dropdown to go to its page:</p> <!-- Instruction for the user -->
+
+<form>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" onchange="location = this.value;">
+    <option value="">--Select a car--</option>
+    <option value="https://www.carwale.com/mercedes-benz-cars/">Mercedes Benz</option>
+    <option value="https://www.carwale.com/audi-cars/">Audi</option>
+    <option value="https://www.carwale.com/bmw-cars/">BMW</option>
+    <option value="https://www.carwale.com/volvo-cars/">Volvo</option>
+    <option value="https://www.carwale.com/toyota-cars/">Toyota</option>
+  </select>
+</form>
+
+<!-- There is no submit button as redirecting link requires Javascript -->
+
+
+
+
+</body>
+
+</html>

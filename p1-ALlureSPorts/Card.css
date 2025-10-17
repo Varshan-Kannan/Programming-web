@@ -1,0 +1,135 @@
+body {
+    background: #f3ede7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: #f3ede7;
+}
+
+.card {
+    display: flex;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    max-width: 950px;
+    width: 100%;
+}
+
+.card img {
+    width: 390px;
+    height: 570px;
+    object-fit: cover;
+    border-right: 1px solid #f0f0f0;
+    flex-shrink: 0;
+}
+
+.details {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 1;
+    background: #fff;
+}
+
+.label {
+    text-transform: uppercase;
+    color: #a3a3a3;
+    font-size: 0.88rem;
+    letter-spacing: 1.8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.details h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #212529;
+    line-height: 1.2;
+}
+
+.details p {
+    font-size: 1.03rem;
+    line-height: 3cap;
+    margin-bottom: 16px;
+    text-align: left;
+    color: #535353;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.details strong {
+    color: #178860;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.details s {
+    font-size: 1.06rem;
+    color: #bab9b9;
+}
+
+.details button {
+    font-size: 1.1rem;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    background: #178860;
+    color: #fff;
+    transition: background 0.2s;
+    font-weight: 600;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.details button:hover {
+    background: #116154;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .details {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .price-row {
+        justify-content: center;
+    }
+}

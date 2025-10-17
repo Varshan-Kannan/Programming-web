@@ -1,0 +1,1 @@
+console.log("The Script loaded successfully.")
